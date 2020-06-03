@@ -77,13 +77,29 @@ header a:hover{
   background-position: center;
   background-attachment: fixed;
   display: flex;
-  justify-content: center;
+  flex-flow: row nowrap;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
+
 .main_background p{
   font-family: 'Cantarell', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color:#660400;
+  margin-left: 50px;
+}
+
+.main_background div{
+  height: 50vh;
+  border: 1px solid grey;
+  border-radius: 1px;
+  margin-right: 50px;
+}
+
+.main_background img{
+  margin-right: 200px;
+  height: 40vh;
+  filter: drop-shadow(2px 2px 5px black) ;
 }
