@@ -7,6 +7,7 @@
   padding: 0;
   letter-spacing: 1px;
   text-align: center;
+  text-decoration:none;
 }
 
 .transition{
@@ -87,7 +88,7 @@ header button{
 }
 
 nav svg{
-  fill:currentColor;
+  fill: currentColor;
   height: 2rem;
   display: inline-block;
   /* border: 1px solid red; */
