@@ -109,115 +109,66 @@ header img{
 }
 
 
-
 /* main */
-
-
 .main_background{
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/firstbackground.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/backgroundlogin.jpg");
   background-color: ghostwhite;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-attachment:fixed;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  color: ghostwhite;
 }
 
-.main_background h1{
-  font-family: 'Cantarell', sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  color:ghostwhite;
-  margin-left: 50px;
-  z-index: 100;
-}
-
-.main_background div{
-  height: 50vh;
-  border: 1px solid grey;
-  border-radius: 1px;
-  margin-right: 50px;
-}
-.firstSession{
-  margin-right: 15%;
-}
-
-
-.main_background img{
-  height: 50vh;
-  filter: drop-shadow(2px 2px 5px black) ;
-  animation-name: spin;
-  animation-iteration-count: infinite;
-  animation-delay: 3s;
-  animation-duration: 12s;
-  animation-timing-function: ease;
-  animation-direction: alternate;
-}
-
-.main_background img:hover{
-}
-
-@keyframes spin {
- from{
- transform: rotateY(0deg);
- }
- to{
- transform: rotateY(360deg);
- }
-}
-
-
-
-/* .last */
-.main2{
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/surfing.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  height: 100vh;
-  width: 100%;
+.main_background form{
+  height: 70%;
+  width: 70%;
+  /* border: 1px solid red; */
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
- }
-
-.main2 img{
-  height: 30vh;
-  animation-name: surfing;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-  transform-origin: center -20px;
 }
 
-@keyframes surfing {
-  0%{
-    transform: rotate(90deg);
-  }
-  100%{
-    transform: rotate(0deg);
-  }
-}
-/* .last */
-.last{
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/bananas.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  height: 100vh;
-  width: 100%;
+.main_background fieldset{
+  border: 2px solid rgba(230, 126, 34,0.4);
+  border-style: solid;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
- }
+  flex-flow: column nowrap;
+  /* align-items: center; */
+  justify-content: center;
+  width: 50%;
+  height: 80%;
+}
 
-.last img{
-  height: 70vh;
+.main_background legend{
+  font-size: 40px;
+}
+
+.main_background label{
+  margin-top: 2rem;
+  position: relative;
+  left:60px;
+  /* border: 2px solid rgba(230, 126, 34,0.4); */
+  width: 50%;
+}
+
+.main_background label:last-child{
+  margin-bottom: 30px;
+}
+
+.main_background input{
+  margin-top: 1rem;
+  /* align-self: flex-end; */
+  border: 2px solid rgba(83, 92, 104,1.0);
+  width: 50%;
+  position: relative;
+  left:25%;
+  height: 1.5rem;
+  border-radius: 10%;
 }
