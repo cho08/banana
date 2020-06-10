@@ -26,6 +26,7 @@ header{
   background-color: rgba(115, 55, 2,0.0);
   /* background-color: transparent; */
   width:100%;
+  z-index: 1;
 }
 
 
@@ -111,6 +112,9 @@ header img{
 
 
 /* main */
+main{
+  position: relative;
+}
 
 
 .main_background{
@@ -206,6 +210,7 @@ header img{
 }
 /* .last */
 .last{
+  position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/bananas.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -213,11 +218,70 @@ header img{
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
  }
 
 .last img{
   height: 70vh;
+}
+.aboutUs{
+  width: 100%;
+  /* border: 2px solid blue; */
+  position: absolute;
+  bottom: 0%;
+}
+
+input[type="checkbox"]{
+  /* border: 2px solid red; */
+  display: none;
+}
+
+.container{
+  position: absolute;
+  width: 100%;
+  /* border: 1px solid red; */
+  bottom: 1px;
+  left: 0%;
+  color: ghostwhite;
+}
+
+label{
+  /* border: 1px solid blue; */
+  width: 3000px;
+  margin: 0 auto;
+  bottom: 0%;
+  color: ghostwhite;
+  background-color: black;
+  padding: 2px;
+  border-radius: 5%;
+}
+
+#sidebar{
+  position: absolute;
+  /* bottom:-10rem; */
+  bottom:300px;
+  color:ghostwhite;
+  z-index: -1;
+  margin: 0 auto;
+  width: 100%;
+  /* border: 2px solid blue; */
+  transition-duration: 1s;
+}
+
+#sidebar a{
+  color:rgba(231, 76, 60,1.0);
+}
+
+input[type="checkbox"]:checked ~ #sidebar{
+  bottom:0;
+  z-index: 1;
+}
+input[type="checkbox"]:checked ~ .container{
+  bottom:4rem;
+  z-index: 1;
+}
+#sidebar ol{
+  list-style-type: none;
 }

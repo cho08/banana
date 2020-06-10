@@ -1,0 +1,129 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration:none;
+}
+
+.transition{
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+header{
+  position: absolute;
+  height:5rem;
+  display: flex;
+  justify-content: center;
+  /* border-bottom: 2px solid rgb(127, 140, 141,0.4); */
+  border-bottom: 2px solid rgba(230, 126, 34,0.4);
+  background-color: rgba(115, 55, 2,0.0);
+  /* background-color: transparent; */
+  width:100%;
+}
+
+
+header>div{
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+nav{
+  display: flex;
+  flex-flow:row nowrap;
+}
+header a{
+  text-decoration: none;
+  padding: 1rem;
+  display: flex;
+  flex-flow:column nowrap;
+  align-items: center;
+  color:ghostwhite;
+  /* border: 1px solid red; */
+}
+
+
+header a:hover{
+  /* border:1px solid red; */
+  background-color: rgba(200, 200, 200,0.5);
+  color:#5b5b5b;
+  fill:#5b5b5b;
+}
+
+header button{
+  padding-top: 5px;
+  font-weight: bold;
+  background-color: transparent;
+  color:currentColor;
+}
+
+
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border:1px solid green; */
+  height: 5rem;
+  width: 10rem;
+}
+
+#logo{
+  padding: 0;
+}
+#our_logo{
+  animation-name: logo;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+
+nav svg{
+  fill: currentColor;
+  height: 2rem;
+  display: inline-block;
+  /* border: 1px solid red; */
+  width: 2rem;
+}
+
+header img{
+  height: 5rem;
+  padding: 0;
+}
+@keyframes logo {
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 5rem;
+  }
+}
+
+
+
+/* main */
+
+
+.main_background{
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/firstbackground.jpeg");
+  background-color: ghostwhite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
