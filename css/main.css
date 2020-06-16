@@ -10,6 +10,10 @@
   text-decoration:none;
 }
 
+h1{
+      font-family: 'Open Sans', sans-serif;
+}
+
 .transition{
   transition-property: all;
   transition-duration: 0.3s;
@@ -17,16 +21,17 @@
 }
 
 header{
-  position: absolute;
+  position: fixed;
   height:5rem;
   display: flex;
   justify-content: center;
   /* border-bottom: 2px solid rgb(127, 140, 141,0.4); */
-  border-bottom: 2px solid rgba(230, 126, 34,0.4);
-  background-color: rgba(115, 55, 2,0.0);
+  border-bottom: 2px solid rgba(127, 140, 141,0.7);
+  background-color: rgba(240, 240, 241,0.9);
   /* background-color: transparent; */
   width:100%;
   z-index: 1;
+  box-sizing: border-box;
 }
 
 
@@ -35,7 +40,7 @@ header>div{
   flex-flow:row nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 100%;
 }
 
 nav{
@@ -48,7 +53,7 @@ header a{
   display: flex;
   flex-flow:column nowrap;
   align-items: center;
-  color:ghostwhite;
+  color:black;
   /* border: 1px solid red; */
 }
 
@@ -76,6 +81,7 @@ header button{
   /* border:1px solid green; */
   height: 5rem;
   width: 10rem;
+  margin-left: 30px;
 }
 
 #logo{
@@ -86,6 +92,21 @@ header button{
   animation-direction: alternate;
   animation-iteration-count: 1;
   animation-duration: 1s;
+}
+
+#ordernow{
+  box-sizing: border-box;
+  fill:ghostwhite;
+  background-color: rgba(241, 196, 15,1.0);
+  /* border-bottom: 2px solid rgba(127, 140, 141,0.7); */
+  height: 5rem;
+}
+#ordernow svg{
+  fill: currentColor;
+}
+#ordernow:hover{
+  fill:ghostwhite;
+  color:white;
 }
 
 nav svg{
@@ -109,11 +130,33 @@ header img{
   }
 }
 
+/* general class */
+.space{
+  width: 100%;
+  background: white;
+  height: 50px;
+}
 
+.order{
+  background-color: rgba(211, 84, 0,1.0);
+  border: 1px solid rgba(230, 126, 34,1.0);
+  padding: 0.5rem;
+  color: ghostwhite;
+  width: 11rem;
+  border-radius: 5px;
+}
+.order:hover{
+  background-color: rgba(241, 196, 15,1.0);
+}
 
 /* main */
 main{
   position: relative;
+}
+
+.mainpart{
+  display: flex;
+  flex-flow: row wrap;
 }
 
 
@@ -132,14 +175,25 @@ main{
   width: 100%;
 }
 
+.main_background section{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items:center;
+  height: 30vh;
+  /* border: 1px solid red; */
+  margin-left: 50px;
+}
+
 .main_background h1{
   font-family: 'Cantarell', sans-serif;
   font-weight: 400;
   font-size: 2rem;
   color:ghostwhite;
-  margin-left: 50px;
   z-index: 100;
 }
+
+
 
 .main_background div{
   height: 50vh;
@@ -175,16 +229,90 @@ main{
  }
 }
 
+/* steps */
+.steps{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 55vh;
+  width: 100%;
+  background-color: #f7eee2;
+  z-index: 0;
+}
+
+.steps div{
+  width: 20%;
+  height: 55vh;
+  /* border: 1px solid red; */
+  color: ghostwhite;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.steps div:hover{
+  width: 30%;
+  height: 60vh;
+  z-index: 1;
+}
+
+.backgroundcolor{
+  background-color: #f7eee2;
+}
+.steps h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  padding-bottom: 50px;
+}
 
 
-/* .last */
+#step1{
+  background-image:   url(../img/harvesting.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+#step2{
+  background-image:   url(../img/rotated.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#step3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../img/flame.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#step4{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4))/*,url("../img/flame.jpg")*/;
+  background-size: cover;
+  background-position: center;
+}
+
+/* #step5{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../img/delivery.jpg");
+  width: 30%;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 25%;
+  /* border: 1px solid red; */
+} */
+#step5:hover{
+  width: 40%;
+  height: 60vh;
+}
+
+
+/* second pic */
 .main2{
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/surfing.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/surfing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   height: 100vh;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -192,7 +320,8 @@ main{
  }
 
 .main2 img{
-  height: 30vh;
+  /* height: 30%; */
+  width: 30%;
   animation-name: surfing;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -208,6 +337,18 @@ main{
     transform: rotate(0deg);
   }
 }
+
+/* third pic */
+.main3{
+  display: inline-block;
+  border: 1px solid red;
+  width: 50%;
+}
+
+.main3 img{
+  width: 100%;
+}
+
 /* .last */
 .last{
   position: relative;
@@ -226,7 +367,7 @@ main{
 .last img{
   height: 70vh;
 }
-.aboutUs{
+/* .aboutUs{
   width: 100%;
   /* border: 2px solid blue; */
   position: absolute;
@@ -247,7 +388,7 @@ input[type="checkbox"]{
   color: ghostwhite;
 }
 
-label{
+label, #sidebar button{
   /* border: 1px solid blue; */
   display: block;
   width: 150px;
@@ -271,18 +412,9 @@ label{
   transition-duration: 1s;
 }
 
-#sidebar a{
-  color:rgba(231, 76, 60,1.0);
-}
 
-input[type="checkbox"]:checked ~ #sidebar{
-  bottom:0;
-  z-index: 1;
-}
+
 input[type="checkbox"]:checked ~ .container{
   bottom:4rem;
-  z-index: 1;
-}
-#sidebar ol{
-  list-style-type: none;
+  z-index: 1; */
 }

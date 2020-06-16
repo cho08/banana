@@ -10,6 +10,9 @@
     nav a {
       color: white;
     }
+    a{
+      color: white;
+    }
   </style>
   <!-- <link rel="stylesheet" href="css/mcleod-reset.css"> -->
   <link rel="stylesheet" href="css/main.css">
@@ -102,11 +105,11 @@
         </div>
 
         <div>
-          <a href="#" class="transition">
+          <a href="#" class="transition" id="ordernow">
             <svg class="c1">
               <use xlink:href="#Order_Online"></use>
             </svg>
-            <button>Order Online</button>
+            <button>Order Now</button>
           </a>
         </div>
       </nav>
@@ -115,35 +118,57 @@
 
 
   <main>
-    <section>
+    <section class="mainpart">
       <article class="main_background">
-        <h1>Eating chips can be healthy</h1>
+        <section>
+          <h1>Even chips can be healthy</h1>
+          <a href="#" class="order transition">Order Now</a>
+        </section>
         <div></div>
         <a href="" class="firstSession">
           <img src="img/example1.JPG" alt="spinning banana">
         </a>
       </article>
+      <div class="space backgroundcolor"></div>
+      <div class="space backgroundcolor"><h1>How did we make your chips</h1></div>
+      <article class="steps">
+        <div id="step1" class="transition"><h1>Step 1:</h1><p>Harvest them hand by hand</p></div>
+        <div id="step2" class="transition"><h1>Step 2:</h1><p>Slice them into pieces</p></div>
+        <div id="step3" class="transition"><h1>Step 3:</h1><p>Bake them with over 100&deg; flame</p></div>
+        <div id="step4" class="transition"><h1>Final Step:</h1><p>Zip them into the package</p></div>
+        <!-- <section class="space backgroundcolor"></section> -->
+        <!-- <div id="step5" class="transition"><h1>Final Step:</h1><p>Deliver directly to your house and enjoy your meal</p></div> -->
+      </article>
+      <section class="space backgroundcolor"></section>
+      <div class="space backgroundcolor"></div>
+
       <article class="main2">
         <img src="img/surfingbanana.jpeg" alt="picture4">
         <!-- <img src="img/photo2.png" alt="picture2"> -->
+      </article>
+      <article class="main3">
+        <img src="img/example2.jpeg" alt="">
       </article>
       <article class="last">
         <img src="img/photo2.png" alt="picture2">
         <!-- <img src="img/photo2.png" alt="picture2"> -->
 
         <!-- About Us -->
-        <div class="aboutUs">
+        <!-- <div class="aboutUs">
           <input type="checkbox" id="show-menu">
           <div class="container transition">
-            <label for="show-menu" id="btn" class="transition">Our Contact</label>
+            <label for="show-menu" id="btn" class="transition">Menu</label>
           </div>
           <div id="sidebar" class="transition">
-            <ol>
-              <li>Email:&nbsp;yummybananachips01@gmail.com&nbsp;/&nbsp;<a href="mailto:yummybananachips01@gmail.com" target="_blank">Click&nbsp;here</a> <br></li>
-                <li>Tel: +66 92-242-4029 </li>
-                <li>Address:184&nbsp;Kho&nbsp;Hong,&nbsp;Hatyai,&nbsp;Songkhran,&nbsp;Thailand&nbsp;90110</li>
-              </ol>
+            <div class="firstLine">
+              <a href="#"><button>Contact Us</button></a>
+              <a href="#"><button>Product</button></a>
             </div>
+            <div>
+              <a href="#"><button>Our Story</button></a>
+              <a href="#"><button>Order Online</button></a>
+            </div>
+          </div> -->
         </div>
       </article>
     </section>
