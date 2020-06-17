@@ -9,6 +9,11 @@
   text-align: center;
   text-decoration:none;
 }
+/* font color black #29282d */
+
+body{
+  background-color: #FAF4D0;
+}
 
 h1{
       font-family: 'Open Sans', sans-serif;
@@ -18,6 +23,11 @@ h1{
   transition-property: all;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+}
+main{
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
 }
 
 header{
@@ -41,6 +51,7 @@ header>div{
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 5rem;
 }
 
 nav{
@@ -55,6 +66,7 @@ header a{
   align-items: center;
   color:black;
   /* border: 1px solid red; */
+  height:5rem;
 }
 
 
@@ -98,7 +110,7 @@ header button{
   box-sizing: border-box;
   fill:ghostwhite;
   background-color: rgba(241, 196, 15,1.0);
-  /* border-bottom: 2px solid rgba(127, 140, 141,0.7); */
+  border-bottom: 2px solid rgba(127, 140, 141,0.7);
   height: 5rem;
 }
 #ordernow svg{
@@ -107,6 +119,7 @@ header button{
 #ordernow:hover{
   fill:ghostwhite;
   color:white;
+  background-color:  rgba(255, 121, 63,1.0);
 }
 
 nav svg{
@@ -133,11 +146,23 @@ header img{
 /* general class */
 .space{
   width: 100%;
-  background: white;
+  background-color: white;
   height: 50px;
 }
 
 .order{
+  background-color: rgba(106, 176, 76,1.0);
+  border: 1px solid rgba(186, 220, 88,1.0);
+  padding: 0.5rem;
+  color: ghostwhite;
+  width: 11rem;
+  border-radius: 5px;
+}
+.order:hover{
+  background-color:rgba(241, 196, 15,1.0);
+  /* color: #29282d; */
+}
+.order1{
   background-color: rgba(211, 84, 0,1.0);
   border: 1px solid rgba(230, 126, 34,1.0);
   padding: 0.5rem;
@@ -145,7 +170,7 @@ header img{
   width: 11rem;
   border-radius: 5px;
 }
-.order:hover{
+.order1:hover{
   background-color: rgba(241, 196, 15,1.0);
 }
 
@@ -173,36 +198,7 @@ main{
   justify-content: space-around;
   align-items: center;
   width: 100%;
-}
-
-.main_background section{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items:center;
-  height: 30vh;
-  /* border: 1px solid red; */
-  margin-left: 50px;
-}
-
-.main_background h1{
-  font-family: 'Cantarell', sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  color:ghostwhite;
-  z-index: 100;
-}
-
-
-
-.main_background div{
-  height: 50vh;
-  border: 1px solid grey;
-  border-radius: 1px;
-  margin-right: 50px;
-}
-.firstSession{
-  margin-right: 15%;
+  position: relative;
 }
 
 
@@ -221,14 +217,54 @@ main{
 }
 
 @keyframes spin {
- from{
- transform: rotateY(0deg);
- }
- to{
- transform: rotateY(360deg);
- }
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
 }
 
+.firstSession{
+  /* margin-right: 15%; */
+}
+
+.split{
+  height: 70vh;
+  border: 1px solid grey;
+  border-radius: 1px;
+  /* margin-right: 50px; */
+}
+.main_background section{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items:center;
+  height: 30vh;
+  /* border: 1px solid red; */
+  /* margin-right: 100px; */
+  position: relative;
+  left: -100px;
+}
+
+.main_background h1{
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color:ghostwhite;
+  z-index: 100;
+}
+
+
+
+/* backgroundcolor */
+.backgroundcolor{
+  background-color: #f7eee2;
+}
+
+.backgroundcolor>h1{
+  color:#29282d;
+}
 /* steps */
 .steps{
   display: flex;
@@ -256,9 +292,8 @@ main{
   z-index: 1;
 }
 
-.backgroundcolor{
-  background-color: #f7eee2;
-}
+
+
 .steps h1{
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
@@ -298,36 +333,29 @@ main{
   background-size: cover;
   background-position: 50% 25%;
   /* border: 1px solid red; */
-} */
+}
 #step5:hover{
   width: 40%;
   height: 60vh;
 }
 
 
+
 /* second pic */
 .main2{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/surfing.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("../img/seaside.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   height: 100vh;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  background-color: #f7ecdf;
  }
-
-.main2 img{
-  /* height: 30%; */
-  width: 30%;
-  animation-name: surfing;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-  transform-origin: center -20px;
-}
 
 @keyframes surfing {
   0%{
@@ -338,15 +366,73 @@ main{
   }
 }
 
-/* third pic */
-.main3{
-  display: inline-block;
-  border: 1px solid red;
+.container{
+  height: 100vh;
   width: 50%;
+  flex-flow: column nowrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.main2 h1{
+  color:rgba(241, 196, 15,1.0);
+  font-size: 7vh;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  position: relative;
+  top: 10vh;
 }
 
-.main3 img{
+.main2 p{
+  color:ghostwhite;
+  font-size: 3vh;
+  position: relative;
+   top:-5vh;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.order1{
+  position: relative;
+  top:-20vh;
+}
+
+
+.surfingbanana{
+  width: 70%;
+}
+
+.main2 img{
+  /* height: 30%; */
   width: 100%;
+  /* animation-name: surfing;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  transform-origin: center -20px; */
+  height: 60vh;
+}
+/* third pic */
+.main3{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height:100vh;
+  background-color:#f7eee2;
+  border: 1px solid #FFAA0D;
+  border-left: none;
+}
+
+.main3 svg{
+  fill:#FFD700;
+
+}
+.main3 img{
+  width: 60%;
 }
 
 /* .last */
@@ -369,13 +455,13 @@ main{
 }
 /* .aboutUs{
   width: 100%;
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   position: absolute;
   bottom: 0%;
 }
 
 input[type="checkbox"]{
-  /* border: 2px solid red; */
+   border: 2px solid red;
   display: none;
 }
 
@@ -383,14 +469,14 @@ input[type="checkbox"]{
   position: absolute;
   width: 100%;
   /* border: 1px solid red; */
-  bottom: 1px;
+/*  bottom: 1px;
   left: 0%;
   color: ghostwhite;
 }
 
 label, #sidebar button{
   /* border: 1px solid blue; */
-  display: block;
+  /*display: block;
   width: 150px;
   margin: 0 auto;
   bottom: 0%;
@@ -403,13 +489,13 @@ label, #sidebar button{
 #sidebar{
   position: absolute;
   /* bottom:-10rem; */
-  bottom:300px;
+  /*bottom:300px;
   color:ghostwhite;
   z-index: -1;
   margin: 0 auto;
   width: 100%;
   /* border: 2px solid blue; */
-  transition-duration: 1s;
+  /*transition-duration: 1s;
 }
 
 
@@ -417,4 +503,4 @@ label, #sidebar button{
 input[type="checkbox"]:checked ~ .container{
   bottom:4rem;
   z-index: 1; */
-}
+/*} */
