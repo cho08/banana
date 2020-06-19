@@ -206,6 +206,7 @@ main{
 
 
 .main_background img{
+  /* border: 1px solid red; */
   height: 50vh;
   filter: drop-shadow(2px 2px 5px black) ;
   animation-name: spin;
@@ -248,6 +249,7 @@ main{
   /* margin-right: 100px; */
   position: relative;
   left: -100px;
+  /* width: 50%; */
 }
 
 .main_background h1{
@@ -436,7 +438,7 @@ main{
   height:100vh;
   /* background-color:#f7eee2; */
   /* background-image: linear-gradient(to right,rgba(247, 238, 226, 0.3),rgba(247, 238, 226, 0.3)),url("../img/crown.jpg"); */
-  background-image: linear-gradient(to right,rgba(255, 165, 0, 0.7),rgba(0, 0, 0, 0.5)),url("../img/crown.jpg");
+  background-image: linear-gradient(to right,rgba(255, 165, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/crown.jpg");
   background-repeat: no-repeat;
   background-position: center;
   /* background-image: radial-gradient(grey,#f7eee2); */
@@ -520,7 +522,7 @@ main{
   height: 100vh;
   font-size: 1.2rem;
   width: 40%;
-  z-index: 1;
+  z-index: 0;
   color: ghostwhite;
   /* background-color: rgba(0,0,0,0.1); */
 }
@@ -541,7 +543,7 @@ main{
 }
 .text a{
   margin-bottom: 50px  ;
-
+  /* z-index: -1; */
 }
 .text img{
   border-radius: 100%;
