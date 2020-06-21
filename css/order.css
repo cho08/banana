@@ -15,7 +15,7 @@ body{
   background-color: #FAF4D0;
 }
 
-h1{
+h1,h2{
       font-family: 'Open Sans', sans-serif;
 }
 p{
@@ -175,4 +175,40 @@ header img{
 }
 .order1:hover{
   background-color: rgba(241, 196, 15,1.0);
+}
+
+/* main */
+main{
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+}
+.space{
+  height: 20vh;
+  background-color: #f7eee2;
+}
+
+
+
+section{
+display: flex;
+flex-flow: column wrap;
+justify-content:flex-start;
+align-items: center;
+height: 100vh;
+width: 100%;
+background-color: #f7eee2;
+position: relative;
+}
+
+section h1{
+  position: relative;
+  align-self: flex-start;
+  left: 100px;
+}
+
+#order{
+  border: collapse;
+  width: 100%;
+  border: 1px solid black;
 }
